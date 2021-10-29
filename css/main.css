@@ -1,0 +1,309 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  form {
+    display: inline-block;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* style the container */
+  .container {
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px 0 30px 0;
+    margin-top: 10px;
+  }
+  .container-head{
+    box-shadow: 1px 1px 9px 0px rgb(0 0 255 / 14%);
+    padding-top: 5px;
+  }
+
+  /* style inputs and link buttons */
+  input,
+  .btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none;
+    /* remove underline from anchors */
+  }
+
+  input:hover,
+  .btn:hover {
+    opacity: 1;
+  }
+
+  /* add appropriate colors to fb, linkedin and google buttons */
+  .github {
+    background-color: #3B5998;
+    color: white;
+  }
+
+
+  .linkedin {
+    background-color: #55ACEE;
+    color: white;
+  }
+
+  .google {
+    background-color: #dd4b39;
+    color: white;
+  }
+
+  /* style the submit button */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  /* Two-column layout */
+  .col {
+    float: left;
+    width: 50%;
+    margin: auto;
+    padding: 0 50px;
+    margin-top: 6px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* vertical line */
+  .vl {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid #ddd;
+    height: 175px;
+  }
+
+  /* text inside the vertical line */
+  .vl-innertext {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 8px 10px;
+  }
+
+  /* hide some text on medium and large screens */
+  .hide-md-lg {
+    display: none;
+  }
+
+  /* bottom container */
+  .bottom-container {
+    text-align: center;
+    background-color: #666;
+    border-radius: 0px 0px 4px 4px;
+  }
+  
+
+  /* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 650px) {
+    .col {
+      width: 100%;
+      margin-top: 0;
+    }
+
+    /* hide the vertical line */
+    .vl {
+      display: none;
+    }
+
+    /* show the hidden text on small screens */
+    .hide-md-lg {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  #patients {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+  }
+  
+  #patients td, #patients th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #patients tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #patients tr:hover {background-color: #ddd;}
+  
+  #patients th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .align-left{
+    float: left;
+  }
+
+  li.test-session{
+    background: #f6f7f8;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 1px 1px 2px #777;
+  }
+  ul{
+    list-style-type: none;
+  }
+  .therapy-content{
+    padding: 15px;
+    text-align: left;
+    box-shadow: 1px 1px 9px 0px rgb(0 0 255 / 14%);
+  }
+
+  .recentNews {
+    background-color: #04AA6D;  
+}
+.recentNews .news-title {
+  text-align:center;
+  padding-top:30px;
+  font-family: 'nimbus-sans-condensed', sans-serif;
+  font-size:35px;
+  font-weight:bold;
+  color: #fff;
+}
+.recentNews .news-sub-title {
+  text-align:center;
+  padding-bottom:10px;
+  font-family: 'nimbus-sans-condensed', sans-serif;
+  font-size:18px;
+  font-weight:bold;
+  color: #fff;
+}
+.recentNews .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.recentNews .ct-blog {
+    margin-bottom: 30px;
+}
+.ct-blog .inner {
+    background-color: #FFF;
+    padding: 10px;
+    transition: all 0.2s ease-in-out 0s;
+    cursor: pointer;
+    height: 100%;
+}
+.ct-blog .inner:hover {
+    background-color: #e6e6e6;
+}
+.ct-blog .fauxcrop {
+    height: 180px;
+    overflow: hidden;
+}
+.ct-blog .fauxcrop img {
+    width: 100%;
+}
+.ct-blog-content {
+    display: table;
+    padding: 30px 0 28px;
+}
+.ct-blog-content .ct-blog-date {
+    border-right: 1px solid #95A5A6;
+    display: table-cell;
+    font-family: "Lato", sans-serif;
+    padding: 0px 18px 0px 15px;
+    text-align: center;
+}
+.ct-blog-content .ct-blog-date span {
+    font-size: 16px;
+    color: #04AA6D;  
+    font-weight: 700;
+    display: block;
+    line-height: 1;
+}
+.ct-blog-content .ct-blog-date strong {
+    font-size: 25px;
+    color: #04AA6D;  
+}
+.ct-blog-content .ct-blog-header {
+    color: #000;
+    display: table-cell;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+    line-height: 1.1;
+    padding: 0 20px;
+    vertical-align: top;
+}
+.btn-news {
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.btn-news.btn-contests a {
+    color: #fff;
+    font-family: 'nimbus-sans-condensed', sans-serif;
+    font-size: 24px;
+    transition: all 0.2s ease-in-out 0s;
+}
+.btn-news.btn-contests a:hover {
+    color: #000;
+}
+
+ul.horizontal {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+ul.horizontal li a.active {
+  background-color: #04AA6D;
+}
+ul.horizontal li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ul.horizontal li {
+  float: left;
+}
+.hide{
+  display: none;
+}
+.rss_Feed{
+  
+  width: 80%;
+  margin: auto;
+}
